@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/css/styles.css">    
+</head>
+<body>
+
+    <h1>{{title}}</h1>
+    <p>Created by {{name}}</p>
+    <form id="firstForm">
+        <input placeholder="Location" id="firstInput">
+        <button id="firstButton">Search</button>
+    </form>
+
+<script type="javascript">
+    echo("hello");
+         firstForm = document.getElementById("firstForm");
+         firstInput = document.getElementById("firstInput");
+         console.log("ddddd");
+        //const firstForm = document.querySelector('form' = "firstForm")
+        //const search = document.querySelector('input')
+        console.log("sssss");
+        firstForm.addEventListener('submit', (e) => {
+            console.log("sssss");
+            e.preventDefault()
+          //  const location = search.value
+            //fetch('http://localhost:3001/weather?address=' + location).then((response) => {
+            //    response.json().then((data) => {
+            //        if (data.error) {
+            //            console.log(data.error)
+            //        } else {
+            //            console.log(data.location)
+            //            console.log(data.forecast)
+            //        }
+            //    })
+            //})
+           // console.log(location);
+        })
+    </script>
+
+
+</body>
+</html>
